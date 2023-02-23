@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link media="all" href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Yantramanav&display=swap" rel="stylesheet">
+    <title>Elementsuite App</title>
+  </head>
+  <body>
+    <div class="logo-container">
+    <div class="logo-block">
+    <img id="elementsuite-ring" class="animation-spin" src="assets/ring.png" alt="">
+    <img id="elementsuite-letters" src="assets/letters.png" alt="letters.png">
+    </div>
+    </div>
+    <div id="code-container">
+      <img id="background-stamp" src="assets/suite-stamp.svg" alt="">
+    <div id="log-in-block">
+      <div class="code-credentials">
+        <div class="strapline">
+          <div id="strapline-images">
+            <div class="main-title">
+              <img id=""src="assets/suite-strap-header.svg" alt="">
+              </div>
+          <img class="strapline-animation" src="assets/suite-strap-powerful.svg" alt="">
+          <img class="strapline-animation" src="assets/suite-strap-smart.svg" alt="">
+          <img class="strapline-animation" src="assets/suite-strap-software.svg" alt="">
+          </div>
+          
+        </div>
+        <h2 class="second-heading">Please enter your company code</h2>
+        <div class="passcode-squares">
+        <form id="passcode-form">
+        <input id="i1" class="input-box" maxlength="1" type="text" onkeyup="movetoNext(this, 'i2')">
+        <input id="i2" class="input-box" maxlength="1" type="text" onkeyup="movetoNext(this, 'i3')">
+        <input id="i3" class="input-box" maxlength="1" type="text" onkeyup="movetoNext(this, 'i4')">
+        <input id="i4" class="input-box fourth-box" maxlength="1" type="text">
+      </div>
+      <input id="submit-box" class="greyed-out" type="submit" value="Submit">
+      </form>
+      </div>
+    </div>
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>
